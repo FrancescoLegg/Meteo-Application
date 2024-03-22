@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MeteoLegg</title>
+</head>
+<body>
+
+    <!-- Generic meteo container -->
+    <div class="meteo-box">
+        
+        <!-- SearchBar container -->
+        <div class="search">
+            <input type="text" placeholder="Enter your location..." id="search-bar">
+            <button id="search-button"><i class="fa fa-search"></i></button>
+        </div>
+
+        <!-- Contenitore InfoMeteo -->
+        <div class="meteo-info">
+            <img src="assets/clear.png" alt="weather-photo" id="logo-meteo">
+
+            <!-- Container for degree output -->
+            <div class="degree-container">
+                <div class="degree-value" id="degree-value"></div>
+                <div class="degree-type" id="degree-type">°C</div>
+            </div>
+
+            <!-- Weather situation-->
+            <div class="situation" id="situation"></div>
+
+            <!-- Weather details -->
+            <div class="more-info">
+                <div class="wind" id="wind"></div>
+                <div class="humidity" id="humidity"></div>
+            </div>
+        </div>
+
+    </div>
+     
+    <script src="dist /script.js"></script>
+</body>
+</html>
